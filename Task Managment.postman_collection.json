@@ -1,0 +1,177 @@
+{
+  "info": {
+    "_postman_id": "fed6e4f2-5de0-4792-baa3-8df1ca291622",
+    "name": "Task Managment",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "12754699"
+  },
+  "item": [
+    {
+      "name": "list",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:3000/api/v1/tasks",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "v1",
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "add",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"sdfgh\",\r\n    \"description\": \"dfgh\",\r\n    \"status\": \"pending\" //s (pending / ongoing / completed\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}api/v1/task",
+          "host": [
+            "{{base_url}}api"
+          ],
+          "path": [
+            "v1",
+            "task"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "api/v1/task/:id",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"sdfgh\",\r\n    \"description\": \"dfgh\",\r\n    \"status\": \"pending\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}api/v1/task/69c4456423d391a1578e0e4b",
+          "host": [
+            "{{base_url}}api"
+          ],
+          "path": [
+            "v1",
+            "task",
+            "69c4456423d391a1578e0e4b"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "api/v1/task/:id",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"sdfgh\",\r\n    \"description\": \"dfgh\",\r\n    \"status\": \"pending\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}api/v1/task/69c4456423d391a1578e0e4b",
+          "host": [
+            "{{base_url}}api"
+          ],
+          "path": [
+            "v1",
+            "task",
+            "69c4456423d391a1578e0e4b"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "api/v1/task/:id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"sdfgh\",\r\n    \"description\": \"dfgh\",\r\n    \"status\": \"pending\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}api/v1/task/69c4456423d391a1578e0e4b",
+          "host": [
+            "{{base_url}}api"
+          ],
+          "path": [
+            "v1",
+            "task",
+            "69c4456423d391a1578e0e4b"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "api/v1/task/:id/complete",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"sdfgh\",\r\n    \"description\": \"dfgh\",\r\n    \"status\": \"pending\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}api/v1/task/69c4456423d391a1578e0e4b/complete",
+          "host": [
+            "{{base_url}}api"
+          ],
+          "path": [
+            "v1",
+            "task",
+            "69c4456423d391a1578e0e4b",
+            "complete"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
